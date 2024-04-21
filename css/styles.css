@@ -1,0 +1,45 @@
+body {
+  background: black;
+}
+.bordered {
+  border: 1px solid beige;
+}
+.card {
+  background: beige;
+}
+.container {
+  background: #EC2121;
+  border: 1px solid beige;
+}
+.nav-link {
+  color: beige;
+}
+.nav-item .nav-link.active {
+  background: beige;
+}
+.nav-link:hover {
+  color: aqua;
+}
+h1,
+h2,
+h3,
+p,
+label {
+  color: beige;
+}
+#subbtn {
+  background: #EC2121;
+}
+form {
+  background: #EC2121;
+}
+.footer {
+  background: beige;
+}
+table {
+  color: beige;
+  border: 1px solid beige;
+}
+.title {
+  color: black;
+}

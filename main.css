@@ -24,13 +24,12 @@ a {
     padding: 8px;
 }
 body {
-    background-color:grey;
     margin: auto;
     width: 100%;
 }
 
+
 fieldset {
-   margin: auto;
    padding: 0;
    border: 0;
    font-size: 100%;
@@ -48,13 +47,11 @@ h2 {
    font-weight: bold;
    font-size: 30px;
    text-align: center;
-   width: 66.6667%;
 }
 
 form {
-   padding: 10px;
-   width: 50%;
-   float: left;
+   margin: auto;
+   padding: 10px;   width: 75%;
 }
 
 fieldset #contactbox{
@@ -63,34 +60,6 @@ fieldset #contactbox{
    position: relative;
    padding: 2.5em 1em 0.5em 1em;
    background: #b31c01;
-}
-
-
-input, textarea {
-   font-size: 1em;
-}
-
-#randombox {
-   background-color: aqua;
-   height: 100%;
-}
-
-
-#contactbox label {
-   display: block;
-   float: left;
-   clear: left;
-   margin-top: 5px;
-}
-
-#contactbox input {
-   display: block;
-   margin-left: 100px;
-   margin-bottom: 10px;
-}
-
-#nameInput, #streetInput, #cityInput, #stateInput, #zipInput, #emailInput, #phoneInput  {
-   width: 20em;
 }
 
 
@@ -140,13 +109,11 @@ h1 {
 }
 
 .container {
-  padding: 0 16px;
+   margin: auto;
+  padding: 5px 16px;
 
 }
 
-.footer {
-   background-color: beige;
-}
 
 .container::after, .row::after {
   content: "";
@@ -160,7 +127,7 @@ h1 {
 
 
 table, th, td {
-   border: 1px solid black;
+   margin: auto;
 }
 table {
    margin-top: 10px;
