@@ -15,6 +15,7 @@ ul {
     margin: auto;
 }
 
+
 li {
     float: left;
 }
@@ -134,4 +135,7 @@ table {
 }
 td {
    padding: 10px;
+}
+a:active {
+   color: white
 }

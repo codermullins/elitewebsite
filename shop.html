@@ -16,9 +16,19 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script type="text/javascript" src="data.js"></script>
     <title>Shop</title>
   </head>
   <body>
+    <script id="navigationBar" type="x-tmpl-mustache">
+      {{#item}}
+        <li class="nav-item">
+          <a class="nav-link " href="{{link}}">{{name}}</a>
+        </li>
+      {{/item}}
+    </script>
     <div class="jumbotron" role="img" aria-label="Elite Athletic Club Wresting">
       <img src="images/logo.gif" class="img-fluid" alt="Elite Logo" />
     </div>
@@ -37,29 +47,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav nav-pills nav-fill">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/join.html">Join Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/events.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact Us</a>
-            </li>
-          </ul>
+          <ul class="navbar-nav nav-pills nav-fill" id="render_navLinks"></ul>
         </div>
       </div>
     </nav>
+    <h1>this will be the store page</h1>
     <footer class="footer fixed-bottom">This is a footer placeholder</footer>
   </body>
 </html>
