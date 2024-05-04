@@ -29,6 +29,30 @@
         </li>
       {{/item}}
     </script>
+    <script id="staffList" type="x-tmpl-mustache">
+      {{#staff}}
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <h2>{{name}}</h2>
+            <p class="title">{{position}}</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          </div>
+        </div>
+      </div>
+      {{/staff}}
+    </script>
+    <script id="storeList" type="x-tmpl-mustache">
+      {{#store}}
+        <div class="col-md-3 border m-5">
+          <h2>{{name}}</h2>
+          <img class="img-thumbnail" src="{{image}}"/>
+          <p class="text-center">{{price}}</p>
+          <p class="text-center">{{cat}}</p>
+        </div>
+      {{/store}}
+    </script>
+
     <div class="jumbotron" role="img" aria-label="Elite Athletic Club Wresting">
       <img src="images/logo.gif" class="img-fluid" alt="Elite Logo" />
     </div>
@@ -51,7 +75,10 @@
         </div>
       </div>
     </nav>
-    <h1>this will be the store page</h1>
+    <div class="container">
+      <div id="render_storeList" class="row"></div>
+    </div>
+    >
     <footer class="footer fixed-bottom">This is a footer placeholder</footer>
   </body>
 </html>

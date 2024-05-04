@@ -1,9 +1,11 @@
 $(document).ready(function () {
   const navigationBar = $("#navigationBar").html();
   const staffList = $("#staffList").html();
+  const storeList = $("#storeList").html();
 
   Mustache.parse(navigationBar);
   Mustache.parse(staffList);
+  Mustache.parse(storeList);
 
   const topNav = Mustache.render(navigationBar, {
     item: [
@@ -45,4 +47,53 @@ $(document).ready(function () {
   });
 
   $("#render_staffList").html(data);
+
+  const items = Mustache.render(storeList, {
+    store: [
+      {
+        image:
+          "https://academy.scene7.com/is/image/academy/21120760?$pdp-gallery-ng$",
+        name: "ASICS Men's Matflex 7",
+        price: "$60.00",
+        cat: "shoes",
+      },
+      {
+        image:
+          "https://academy.scene7.com/is/image/academy/21120760?$pdp-gallery-ng$",
+        name: "ASICS Men's Matflex 7",
+        price: "$60.00",
+        cat: "shoes",
+      },
+      {
+        image:
+          "https://academy.scene7.com/is/image/academy/21120760?$pdp-gallery-ng$",
+        name: "ASICS Men's Matflex 7",
+        price: "$60.00",
+        cat: "shoes",
+      },
+      {
+        image:
+          "https://academy.scene7.com/is/image/academy/21120760?$pdp-gallery-ng$",
+        name: "ASICS Men's Matflex 7",
+        price: "$60.00",
+        cat: "shoes",
+      },
+      {
+        image:
+          "https://academy.scene7.com/is/image/academy/21120760?$pdp-gallery-ng$",
+        name: "ASICS Men's Matflex 7",
+        price: "$60.00",
+        cat: "shoes",
+      },
+      {
+        image:
+          "https://academy.scene7.com/is/image/academy/21120760?$pdp-gallery-ng$",
+        name: "ASICS Men's Matflex 7",
+        price: "$60.00",
+        cat: "shoes",
+      },
+    ],
+  });
+
+  $("#render_storeList").html(items);
 });

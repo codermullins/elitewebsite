@@ -55,35 +55,48 @@
     <div id="errorMessage"></div>
 
     <!-- Form for delivery informations !-->
-    <div id="formContainer">
-      <form>
-        <fieldset id="contactbox">
-          <label>Name</label>
-          <input type="text" id="nameInput" name="name" required="required" />
-          <label>Street</label>
-          <input type="text" id="streetInput" name="street" />
-          <label>City</label>
-          <input type="text" id="cityInput" name="city" />
-          <label>State</label>
-          <input type="text" id="stateInput" name="state" />
-          <label>Zip</label>
-          <input type="text" id="zipInput" name="zip" />
-          <label>Email</label>
-          <input type="text" id="emailInput" name="email" required="required" />
-          <label>Phone</label>
-          <input type="text" id="phoneInput" name="phone" required="required" />
-          <textarea
-            id="quetsionBox"
-            name="questions"
-            rows="3"
-            cols="50"
-            placeholder="Submit any questions you have"
-          ></textarea>
-        </fieldset>
-        <fieldset id="submitbutton">
-          <input type="submit" id="subbtn" value="Submit" />
-        </fieldset>
-      </form>
+    <div class="p-5">
+      <div id="formContainer">
+        <form>
+          <fieldset class="d-flex flex-column" id="contactbox">
+            <label>Name</label>
+            <input type="text" id="nameInput" name="name" required="required" />
+            <label>Street</label>
+            <input type="text" id="streetInput" name="street" />
+            <label>City</label>
+            <input type="text" id="cityInput" name="city" />
+            <label>State</label>
+            <input type="text" id="stateInput" name="state" />
+            <label>Zip</label>
+            <input type="text" id="zipInput" name="zip" />
+            <label>Email</label>
+            <input
+              type="text"
+              id="emailInput"
+              name="email"
+              required="required"
+            />
+            <label>Phone</label>
+            <input
+              type="text"
+              id="phoneInput"
+              name="phone"
+              required="required"
+            />
+            <textarea
+              class="m-4"
+              id="quetsionBox"
+              name="questions"
+              rows="3"
+              cols="50"
+              placeholder="Submit any questions you have"
+            ></textarea>
+          </fieldset>
+          <fieldset id="submitbutton">
+            <input type="submit" id="subbtn" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
     </div>
     <footer class="footer fixed-bottom">This is a footer placeholder</footer>
   </body>
